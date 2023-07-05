@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Proyecto Encriptadr de Textos">
+    <meta name="author" content="Michael Arevalo"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Textos</title>
+</head>
+<body>
+    <header class="Encabezado">
+        <h1 class="Logo-Alura">
+            <img src="Imagenes/Logo.png" alt="Logo Alura">
+        </h1>
+    </header>
+    <main>
+        <section class="seccionTexto">
+            <textarea cols="30" rows="8.5" class="espacioTexto" placeholder="Ingresa el texto que quieres encriptar: "></textarea>
+            <div class="aclaracion">
+                <h6>
+                    Solo se permiten letras minusculas y sin acentos :) 
+                </h6>
+            </div>
+            <div class="botones">
+                <button id="encriptarTexto" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button id="desencriptarTexto" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="seccionTextoEncriptado">
+            <textarea name="" id="" cols="30" rows="10" class="espacioResultado" disabled> No se encontró ningún mensaje... Ingresa uno y da click en la opción que quieres!
+            </textarea>
+            <button class="copiar" onclick="copiarTexto()">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Derechos Reservados - Michael Arevalo - 2023 
+            <span>Oracle Next Education - AluraLATAM
+            </span>
+        </p>
+        <div class="linksRedes">
+            <a href="https://github.com/MichaeLQ0" target="_blank">
+                <img src="Imagenes/GitHub.png" alt="Link a GitHub" class="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/michael-arevalo-itc/" target="_blank">
+                <img src="Imagenes/LinkesIn.png" alt="Link a LinkedIn" class="LinkedIn">
+            </a>    
+        </div>
+
+    </footer>
+</body>
+<script src="script.js">
+</script>
+
+</html>

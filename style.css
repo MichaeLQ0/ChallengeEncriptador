@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+/*Version mobile*/
+
+.Logo-Alura{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+.espacioTexto{
+    width: 95%;
+    height: 50vh;
+    margin: 0 0 20px 9px;
+    border: none;
+    background-color: #F3F5FC;
+    padding: 10px;
+    font-family: monospace;
+    resize: none;
+}
+
+.espacioTexto:focus{
+    border: 2px solid darkblue;
+    border-radius: 20px;
+}
+
+.aclaracion{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 25px 0;
+    font-weight: bold;
+    font-family: monospace;
+ }
+
+ .botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;   
+ }
+
+#encriptarTexto{
+    width: 300px;
+    margin-left: 30px;
+    padding: 25px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    border-radius: 20px;
+    border: none;
+    background-color: darkblue;
+    color: #fff;
+}
+ 
+#desencriptarTexto{
+    width: 300px;
+    margin-left: 30px;
+    padding: 25px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    border-radius: 20px;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+  
+.espacioResultado{
+    width: 90%;
+    height: 50vh;
+    margin: 0 0 20px 17.5px;
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 1.2em;
+    border-radius: 20px;
+    resize: none;
+    text-align: center;
+}
+
+.espacioResultado:focus{
+    outline: none;
+    border: none;
+}
+
+.copiar{
+    width: 300px;
+    margin-left: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    border-radius: 20px;
+    border: none;
+    background-color: darkblue;
+    color: #fff;
+
+}
+
+footer{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p{
+    font-family: monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p span{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.linkRedes{
+    display: flex;
+    flex-direction: row;
+}
+
+.LinkedIn{
+    width: 50px;
+    margin: 20px;
+}
+
+.GitHub{
+    width: 50px;
+    margin: 20px;
+}
+
+
+
+/*Version tablet*/
+
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+    .Logo-Alura{
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .espacioTexto{
+        width: 95%;
+        height: 60vh;
+        margin: 0 0 20px 23.5px;
+    }    
+
+    .aclaracion{
+        margin: 0 0 50px 0;
+        font-size: 1.8em;
+     }
+
+     .botones{
+        flex-direction: row;  
+     }   
+
+     #encriptarTexto{
+        font-size: 1.5em;
+    }
+     
+    #desencriptarTexto{
+        font-size: 1.5em;
+
+    }
+
+    .espacioResultado{
+        width: 95%;
+        height: 60vh;
+        margin: 0 0 20px 0px;
+    }
+    
+    .seccionTextoEncriptado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copiar{
+        width: 300px;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    footer{
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer p{
+        font-family: monospace;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    p span{
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+
+/*Version Escritorio*/
+
+@media screen and (min-width: 1024px){
+
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .espacioTexto{
+        width: 60%;
+        height: 60vh;
+        margin: 0 0 40px 330px;
+    }    
+
+    .aclaracion{
+        margin: 0 0 50px 150px;
+        font-size: 1.8em;
+     }
+
+     .botones{
+        flex-direction: row; 
+        margin-left: 300px ;
+     }   
+
+     #encriptarTexto{
+        font-size: 1.5em;
+    }
+     
+    #desencriptarTexto{
+        font-size: 1.5em;
+
+    }
+
+    .espacioResultado{
+        width: 95%;
+        height: 70vh;
+        margin: 0 50px 0 0;
+    }
+    
+    .seccionTextoEncriptado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copiar{
+        width: 200px;
+        font-size: 1.5em;
+        padding: 20px;
+        margin-top: 30px;
+        margin-right: 45px;
+    }
+
+    footer{
+        margin-top: 110px;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer p{
+        font-family: monospace;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    
+    p span{
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .LinkedIn{
+        width: 70px;
+        margin: 20px;
+    }
+
+    .GitHub{
+        width: 70px;
+        margin: 20px;
+    }
+}
+
